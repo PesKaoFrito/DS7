@@ -21,16 +21,6 @@ SET time_zone = "+00:00";
 -- Base de datos: `labsdb`
 --
 
-DELIMITER $$
---
--- Procedimientos
---
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_listar_noticias` ()   BEGIN
-	SELECT id, titulo, texto, categoria, fecha, imagen FROM noticias;
-END$$
-
-DELIMITER ;
-
 -- --------------------------------------------------------
 
 --
